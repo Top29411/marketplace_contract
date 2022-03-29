@@ -218,7 +218,7 @@ function set_rentprice(
     uint256 currentIndex = 0;
     MarketItem[] memory items = new MarketItem[](itemCount);
     for (uint256 i = 1; i <= itemCount; i++) {
-      MarketItem memory item = marketItemsById[i];
+      MarketItem memory item = marketItemsById[tokenIdArr[i]];
         items[currentIndex] = item;
         currentIndex++;
     }
